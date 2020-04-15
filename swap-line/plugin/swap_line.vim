@@ -38,5 +38,5 @@ function! s:create_key_bind(modes, bindName, funcName)
     endfor
 endfunction
  
-call s:('ni', 'swapUp', 'swap_up')
-call s:('ni', 'swapDown', 'swap_down')
+call s:create_key_bind('ni', 'swapUp', 'swap_up')
+call s:create_key_bind('ni', 'swapDown', 'swap_down')
