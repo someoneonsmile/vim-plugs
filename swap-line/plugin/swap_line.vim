@@ -1,8 +1,4 @@
-if exists('loaded_swap_line')
-    finish
-endif
 
-let loaded_swap_line = 1
 
 function! s:swap_lines(n1, n2)
  let line1 = getline(a:n1)
