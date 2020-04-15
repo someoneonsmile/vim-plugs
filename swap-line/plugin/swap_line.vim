@@ -34,8 +34,12 @@ endfunction
 function! s:create_key_bind(modes, bindName, funcName)
     let prefix = 'SWAPLINE_'
     for mode in (a:modes ==# '') ? [''] : split(a:modes, '\zs')
-        let dealIns = mode ==# 'i' ? 'a' : ''
-        execute mode . 'noremap <silent> <plug>(' . prefix . a:bindName . ') <Esc>:<C-u>call <SID>' . a:funcName . '()<CR>' . dealIns
+        let isIns = mode ==# 'i'
+        if isIns
+            execute mode . 'noremap <silent> <plug>(' . prefix . a:bindName . ') <SPACE><BS><ESC>:<C-u>call <SID>' . a:funcName . '()<CR>a' 
+        else
+            execute mode . 'noremap <silent> <plug>(' . prefix . a:bindName . ') :<C-u>call <SID>' . a:funcName . '()<CR>' 
+        endif
     endfor
 endfunction
  
