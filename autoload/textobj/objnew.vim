@@ -1,4 +1,4 @@
-function! textobj#entire#select_a() 
+function! textobj#objnew#select_a() 
   " To easily back to the last position after a command.
   " For example: yae<C-o>
   " normal! m'
@@ -15,7 +15,7 @@ function! textobj#entire#select_a()
 endfunction
 
 
-function! textobj#entire#select_i() 
+function! textobj#objnew#select_i() 
   " To easily back to the last position after a command.
   " For example: yie<C-o>
   " normal! m'
