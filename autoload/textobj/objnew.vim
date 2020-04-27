@@ -22,7 +22,7 @@ function! textobj#objnew#select_i()
 
   if !search('new\s\+\w\+(', 'bcW')
     return 0
-  end if
+  endif
   normal! f(l
   let start_pos = getpos('.')
 
