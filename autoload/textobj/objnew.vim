@@ -3,7 +3,7 @@ function! textobj#objnew#select_a()
   " For example: yae<C-o>
   " normal! m'
     
-  if !search('\zsnew\\s+\\w+\\(\ze', 'bcW')
+  if !search('\zsnew\\s\\+\\w\\+\\(\ze', 'bcW')
     return 0
   end if
   let start_pos = getpos('.')
@@ -21,7 +21,7 @@ function! textobj#objnew#select_i()
   " normal! m'
 
   keepjumps normal! gg0
-  if !search('\zsnew\\s+\\w+\\(\ze', 'bcW')
+  if !search('\zsnew\\s\\+\\w\\+\\(\ze', 'bcW')
     return 0
   end if
   normal! f(
