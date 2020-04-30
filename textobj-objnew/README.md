@@ -5,5 +5,5 @@
 > `require vim-textobj-user`
 
 ```
-  Plug 'someoneonsmile/vim-textobj-objnew', { 'for':['java'] }
+  Plug 'someoneonsmile/vim-textobj-objnew', { 'rtp': 'textobj-objnew', 'for':['java'] }
 ```
