@@ -4,8 +4,8 @@ endif
 
 call textobj#user#plugin('oneline', {
 \   '-': {
-\     'select-a': 'ao',  'select-a-function': 'textobj#oneline#select_a',
-\     'select-i': 'io',  'select-i-function': 'textobj#oneline#select_i'
+\     'select-a': 'al',  'select-a-function': 'textobj#oneline#select_a',
+\     'select-i': 'il',  'select-i-function': 'textobj#oneline#select_i'
 \   },
 \ })
 
