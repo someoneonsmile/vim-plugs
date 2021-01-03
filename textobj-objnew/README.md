@@ -4,6 +4,6 @@
 
 > `require vim-textobj-user`
 
-```
-  Plug 'someoneonsmile/vim-textobj-objnew', { 'rtp': 'textobj-objnew', 'for':['java'] }
+```vim
+  Plug 'someoneonsmile/vim-textobj-oneline', { 'rtp': 'textobj-oneline' }
 ```
